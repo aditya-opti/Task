@@ -1,0 +1,334 @@
+@import url("https://fonts.cdnfonts.com/css/samsung-sharp-sans");
+@import url("https://fonts.cdnfonts.com/css/samsungone");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  height: 63px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+
+.main-section__header {
+  text-align: center;
+  margin: 27px auto 14px auto;
+}
+
+.main-section__heading {
+  font-family: "Samsung Sharp Sans", sans-serif;
+  font-size: 36px;
+  line-height: 45.29px;
+  font-weight: 700;
+}
+
+.main-section__content {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-section__content-text {
+  padding: 0px 72px;
+}
+
+.content-header {
+  font-family: "Samsung Sharp Sans", sans-serif;
+  font-size: 30px;
+  line-height: 37.74px;
+  font-weight: 700;
+}
+.content-text {
+  font-family: "SamsungOne", sans-serif;
+  font-size: 24px;
+  line-height: 28.78px;
+  font-weight: 400;
+}
+
+#task-btn {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  border-radius: 20px;
+  border: none;
+  background: #1428a0;
+  width: 229px;
+  height: 38px;
+  flex-shrink: 0;
+  margin-top: 41px;
+  transition: transform 0.2s;
+}
+#task-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  background-color: #f4f4f4;
+  justify-content: space-around;
+  padding: 32px 30px;
+}
+
+.footer-card {
+  display: flex;
+  align-items: center;
+}
+.footer-card__icon {
+  margin-right: 21px;
+  width: 34px;
+}
+
+/* Styling of Modal assignment */
+.modal {
+  font-family: "PT Sans", sans-serif;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000cc;
+}
+
+.modal-content {
+  display: inline-flex;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-info {
+  width: 460px;
+  padding: 40px 52px 0px;
+}
+.modal-image {
+  height: 539px;
+  width: 330px;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+.modal__mable-heading {
+  color: #353539;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  width: 348px;
+}
+
+.modal__mable-heading span {
+  color: #df720c;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.benefit-lists > li {
+  margin-bottom: 32px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.mable-benefit {
+  display: flex;
+}
+
+.benefit-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.benefit-heading {
+  font-weight: 700;
+  line-height: 20.7px;
+  font-size: 16px;
+}
+.benefit-description {
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+.modal__submit-btn {
+  width: 279px;
+  height: 47px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #df720c;
+  margin-bottom: 32px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.modal__submit-btn:hover {
+  transform: scale(1.1);
+}
+
+.modal__footer-login {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18.12px;
+  color: #2f1d2ccc;
+}
+.modal__footer-login a {
+  font-size: 14px;
+  line-height: 19.07px;
+  color: #2f1d2c;
+}
+.modal__footer-login a:hover {
+  color: blue;
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  height: 24px;
+  /* width: 24px; */
+  right: 0;
+  margin: 24px 24px;
+  transition: transform 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+/* Mobile friendly design */
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  .macif-img {
+    width: 168px;
+  }
+  .main-section {
+    text-align: center;
+  }
+  .products-banner {
+    margin: 24px 0 7px 0;
+  }
+  .main-section__content {
+    display: block;
+  }
+  .main-section__content-text {
+    padding: 0;
+  }
+  .main-section__header {
+    margin: 27px 39px 14px;
+  }
+  .main-section__heading {
+    font-size: 20px;
+    line-height: normal;
+    font-style: normal;
+  }
+  .content-header {
+    /* height: to see if required */
+    font-size: 20px;
+    line-height: normal;
+  }
+  .content-text {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+  }
+  /* height image */
+  .products-banner {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footer-card {
+    margin-bottom: 16px;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer-card {
+    width: 240px;
+    margin: auto;
+    min-width: 230px;
+    margin-bottom: 16px;
+  }
+  .footer-card__icon {
+    margin-right: 21px;
+    height: 21px;
+  }
+  /* Mobile for Modal task */
+
+  .modal-content {
+    display: block;
+    transform: none;
+    margin: 31px auto;
+    width: 327px;
+  }
+  .close {
+    height: 12.01px;
+    right: 0px;
+  }
+  .modal-image {
+    height: 95.92px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+  }
+  .modal-info {
+    width: auto;
+    padding: 24px;
+    text-align: left;
+  }
+  .modal__mable-heading {
+    width: auto;
+    margin: auto;
+    overflow-wrap: break-word;
+  }
+  .benefit-lists > li {
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+  .modal__submit-btn {
+    margin: 32px auto 16px;
+  }
+}
